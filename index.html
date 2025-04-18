@@ -914,6 +914,8 @@
         #certificate2 .certificate-image {
     width: 40%;
     max-width: 350px; 
+    height: auto; /* Allow the height to adjust based on content */
+    max-height: 450px; /* Set a maximum height */
     border: 15px solid white;
 }
 #certificate2 .certificate-desc {
@@ -939,6 +941,8 @@
 
         .art-image {
             width: 100%;
+            height: auto; /* Allow the height to adjust based on content */
+            max-height: 450px; /* Set a maximum height */
             border-radius: 10px;
             border: 5px solid #53ff86;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -961,22 +965,26 @@
         }
 
         .art-desc {
-            width: 60%;
+            width: 45%;
+            height: auto;
             background-color: #53ff86;
             border-radius: 30px;
             padding: 30px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
             font-size: 16px;
             line-height: 1.6;
+            left: 120px;
             text-align: center;
             color: black;
-            margin-left: 20px;
+            margin-left: 30px;
             position: relative;
             overflow: hidden;
+
+            
         }
 
         .art-desc::before {
-            content: "ART";
+            content: "";
             position: absolute;
             top: 10px;
             right: 20px;
@@ -1418,9 +1426,8 @@
                     <img src="cropped-0f767da6-255e-4554-8cd7-23b12f902f71.jpeg" alt="Shaurya Dev" class="profile-pic">
                 </div>
                 <div class="about-text">
-                    <p>Hello! I am a Shaurya Dev, am 18 years old and a student of BBA in IIM Bangalore and GS College, and I am passionate about design and creativity. My aspiration is to become an anime merchandise designer, where I get to blend my love for anime with design. I am constantly looking for new methods of bringing ideas to life using design and innovation.</p>
-                    <p style="margin-top: 15px;">As someone deeply immersed in both business studies and creative pursuits, I strive to incorporate artistic elements into everything I do. My journey involves exploring the intersection of business acumen and design thinking to create unique products and experiences.</p>
-                    <p style="margin-top: 15px;">When I'm not studying or creating designs, you can find me practicing random doodles, or exploring the latest anime series for inspiration.</p>
+                    <p>At the crossroads of business and creativity, I aspire to craft a world where anime meets design innovation. What began as a love for anime became a calling — to design merchandise that blends storytelling, style, and strategy.</p>
+                    <p style="margin-top: 15px;">I am Shaurya Dev, an 18-year-old BBA student at IIM Bangalore and GS College, passionate about design and artistic expression. My goal is to become an anime merchandise designer, combining my creative instincts with business insights to craft unique, marketable products that resonate with fans and stand out in the industry.</p>
                 </div>
             </div>
             
@@ -1464,7 +1471,6 @@
                     <div class="degree-info">Bachelor of Business Administration (BBA)</div>
                     <div class="degree-info">Expected Graduation: 2027</div>
                     <div class="education-description">
-                        Focusing on business fundamentals with specialization in entrepreneurship and creative business management. Actively participating in design-focused extracurricular activities.
                     </div>
                     <div style="margin-top: 15px;">
                         <span class="education-tag">Business</span>
@@ -1478,7 +1484,6 @@
                     <div class="degree-info">Bachelor of Business Administration (BBA)</div>
                     <div class="degree-info">Expected Graduation: 2027</div>
                     <div class="education-description">
-                        Studying commerce and economics with focus on creative industries and digital business. Participating in art clubs and design workshops to enhance creative skills.
                     </div>
                     <div style="margin-top: 15px;">
                         <span class="education-tag">Commerce</span>
@@ -1487,12 +1492,11 @@
                     </div>
                 </div>
                 <div class="education-card">
-                    <img src="https://github.com/shauryadev295/SHAURYADEV24/blob/main/Screenshot%202025-04-17%20at%205.01.14%20PM.png?raw=true" alt="Hiroshima University Logo" class="school-logo">
+                    <img src="Screenshot 2025-04-17 at 5.01.14 PM.png" alt="Hiroshima University Logo" class="school-logo">
                     <div class="school-name">2024 AGILE COIL Program</div>
                     <div class="degree-info">Cultural and Social Entrepreneurship Program</div>
                     <div class="degree-info">Hiroshima University & IIM Bangalore</div>
                     <div class="education-description">
-                        Completed a specialized program focused on social entrepreneurship and cross-cultural business practices, with emphasis on sustainable and creative business solutions.
                     </div>
                     <div style="margin-top: 15px;">
                         <span class="education-tag">International</span>
@@ -1521,7 +1525,6 @@
                     </div>
                     <div>
                         <div class="skill-info">Creativity & Innovation <span class="skill-percentage">90%</span></div>
-                        <div class="skill-description">Developing creative solutions and innovative approaches to design challenges. Constantly exploring new artistic styles and design techniques.</div>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -1534,7 +1537,6 @@
                     </div>
                     <div>
                         <div class="skill-info">Leadership & Team Management <span class="skill-percentage">80%</span></div>
-                        <div class="skill-description">Leading project teams with clear vision and effective communication. Organizing workflow and facilitating collaborative environments.</div>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -1547,7 +1549,6 @@
                     </div>
                     <div>
                         <div class="skill-info">Communication & Collaboration <span class="skill-percentage">85%</span></div>
-                        <div class="skill-description">Clearly conveying ideas and effectively working with diverse teams. Building relationships and facilitating productive discussions.</div>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -1560,7 +1561,6 @@
                     </div>
                     <div>
                         <div class="skill-info">Designing & Artistic Skills <span class="skill-percentage">88%</span></div>
-                        <div class="skill-description">Creating visually appealing designs with strong artistic foundations. Proficient in various artistic mediums and design techniques.</div>
                     </div>
                 </div>
             </div>
@@ -1626,8 +1626,6 @@
                         </div>
                         <div class="certificate-desc">
                             <p>As the team leader, I guided a group of 3-5 students through three key tasks. First, we explored and discussed existing social enterprises, identifying the elements that made them admirable. Then, I led the group as we analysed different social issues from our communities and discussed their importance and potential impact. Finally, under my leadership, we developed a detailed plan for a social enterprise, including innovative solutions, a mission statement, a business model, and strategies to ensure ethical practices and sustainability.</p>
-                            <p class="certificate-highlight">Skills Developed: Leadership, Social Entrepreneurship, Strategic Planning, Cross-cultural Collaboration</p>
-                            <p>This program enhanced my understanding of how business principles can be applied to address social challenges while maintaining cultural sensitivity and ethical standards.</p>
                         </div>
                     </div>
                 </div>
@@ -1640,9 +1638,7 @@
                             <img src="b2d77e4d-1651-4f85-a2bc-448f893ef1e5 (1).jpg" alt="Karate Certificate">
                         </div>
                         <div class="certificate-desc">
-                            <p>In 2017, I joined a karate class under the Renbukan organization. Over the course of six months, I trained diligently and progressed up to the orange belt level. During this time, I had the opportunity to participate in a belt examination where I showcased the skills and techniques I had learned. I was thrilled to win first prize in the examination, which was a proud moment in my martial arts journey.</p>
-                            <p class="certificate-highlight">Skills Developed: Discipline, Focus, Physical Coordination, Perseverance</p>
-                            <p>The training and competition helped me develop mental focus and physical discipline that I apply to all aspects of my life, including my academic studies and creative pursuits.</p>
+                            <p>In 2017, I joined a karate class under the Renbukan organization. Over the course of six months, I trained diligently and progressed up to the orange belt level. During this time, I had the opportunity to participate in a belt examination where I showcased the skills and techniques I had learned. I was thrilled to win first prize in the examination, which was a proud moment in my journey.</p>
                         </div>
                     </div>
                 </div>
@@ -1657,11 +1653,8 @@
                             </div>
                         </div>
                         <div class="art-desc">
-                            <p>As an artist, I participated in multiple art competitions and received several awards for my work.I've been passionate about drawing ever since I was a child. From the moment I could hold a pencil, sketching became my favorite way to express myself and make sense of the world around me. As I grew older, I began participating in various art competitions, and to my surprise and excitement, I started winning many of them.These early achievements played a huge role in boosting my confidence and deepening my love for art. Each win felt like a stepping stone, encouraging me to challenge myself further and explore beyond traditional drawing.
-
-                                Over time, this motivation led me to experiment with different art forms — from painting and digital illustration to more modern techniques like mixed media and graphic design. I love the process of learning something new and pushing my creative boundaries. Art has become more than just a hobby; it's a continuous journey of growth, discovery, and self-expression that I truly cherish. .</p>
-                            <p class="certificate-highlight">Art Achievements:</p>
-                            <p style="margin-top: 20px;">These artistic achievements have significantly contributed to my goal of becoming an anime merchandise designer, providing practical experience and recognition in the field.</p>
+                            <p>Drawing has always been my primary medium for creative expression, and over the years, I've expanded my skills to include various forms of art, from traditional drawing to digital illustration and mixed media.</p>
+                                <p style="margin-top: 15px;"> As an artist, I’ve participated in numerous art competitions and received several awards for my work, each one serving as both a confidence booster and a source of motivation to push my creative boundaries. These accomplishments have driven me to explore new techniques and art forms, and I continue to seek growth and self-expression through the process of learning and creating</p>
                         </div>
                     </div>
                 </div>
